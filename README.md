@@ -79,8 +79,8 @@ static final long serialVersionUID;
 public void savePlayerDataToFile(Player player){
         File playerDataFile = new File(player.getName()+".data");
 
-        try(FileOutputStream fileOutputStream = new FileOut-putStream(playerDataFile);
-                ObjectOutputStream objectOutputStream = new ObjectOut-putStream(fileOutputStream)) {
+        try(FileOutputStream fileOutputStream = new FileOutputStream(playerDataFile);
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream)) {
 
                 objectOutputStream.writeObject(player);
 
