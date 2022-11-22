@@ -1,5 +1,6 @@
 package com.learning.task4;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -82,9 +83,9 @@ public class Cat {
         return birthDate;
     }
 
-    public Cat(int age, LocalDate birthDate, String name, String breed, String color, int weight, int tall) {
-        this.age = age;
+    public Cat(LocalDate birthDate, String name, String breed, String color, int weight, int tall) {
         this.birthDate = birthDate;
+        this.age = LocalDate.now().getYear() - birthDate.getYear();
         this.name = name;
         this.breed = breed;
         this.color = color;

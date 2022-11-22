@@ -10,6 +10,7 @@ public class SimpleFileIO implements IOTask<String> {
     @Override
     public void input(String fileName) throws FileNotFoundException {
         //TODO Загрузить содержимое текстового файла с помощью FileReader и BufferedReader
+        //TODO Вывести на экран загруженные данные
     }
 
     @Override
