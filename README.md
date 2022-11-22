@@ -102,12 +102,15 @@ public void savePlayerDataToFile(Player player){
 
 ```java
 public Player getPlayerDataFromFile(String fileName) throws IOException {
+
         try(FileInputStream fileInputStream = new FileInputStream(fileName);    
-                ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)){
-                  return (Player) objectInputStream.readObject();
-                } catch (ClassNotFoundException e) {
+		ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)){
+		
+                  return (Player) objectInputStream.readObject(); //Десериализуем объект - преобразовываем тип Object в класс Player
+		  
+        	} catch (ClassNotFoundException e) {
                         e.printStackTrace();
-                        return new Player();
+                        return new Player(); //Возвращаем "пустого" игрока, если не удалось десериализовать.
                 }
 }
 ```
