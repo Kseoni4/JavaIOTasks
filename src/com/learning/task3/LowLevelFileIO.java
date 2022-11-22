@@ -2,8 +2,8 @@ package com.learning.task3;
 
 import com.learning.IOTask;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
+import java.util.Arrays;
 
 public class LowLevelFileIO implements IOTask<String> {
     @Override

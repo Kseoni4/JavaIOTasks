@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Cat {
+public class Cat implements Serializable {
 
     //возраст
     private int age;

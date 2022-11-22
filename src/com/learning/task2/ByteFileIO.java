@@ -2,8 +2,6 @@ package com.learning.task2;
 
 import com.learning.IOTask;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ByteFileIO implements IOTask<String> {
