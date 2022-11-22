@@ -99,6 +99,7 @@ public void savePlayerDataToFile(Player player){
 
 Как будет выглядеть десериализация:
 
+```java
 public Player getPlayerDataFromFile(String fileName) throws IOException {
         try(FileInputStream fileInputStream = new FileInputStream(fileName);    
                 ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)){
@@ -108,6 +109,7 @@ public Player getPlayerDataFromFile(String fileName) throws IOException {
                         return new Player();
                 }
 }
+```
 
 
 
