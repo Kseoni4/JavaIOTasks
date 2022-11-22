@@ -1,11 +1,12 @@
 package com.learning.task4;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class VetBook {
+public class VetBook implements Serializable {
     private long VID;
 
     private LocalDate lastVaccination;

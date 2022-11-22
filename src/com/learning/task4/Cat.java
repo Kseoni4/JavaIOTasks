@@ -91,6 +91,7 @@ public class Cat implements Serializable {
         this.color = color;
         this.weight = weight;
         this.tall = tall;
+        this.vetBook = new VetBook(this.getBirthDate());
     }
 
     @Override
