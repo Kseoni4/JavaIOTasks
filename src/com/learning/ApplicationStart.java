@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class ApplicationStart {
+package com.learning;
+
+public class ApplicationStart {
 }
